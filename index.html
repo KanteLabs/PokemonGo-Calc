@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-<div class="mdl-card mdl-shadow--8dp">
+<div class="mdl-card mdl-shadow--8dp" style="overflow-x:auto;">
 	<div class="mdl-card__title">
 		<h1 class="mdl-card__title-text">PokemonGo Evolve Calculator</h1>
 	</div>
@@ -27,10 +27,10 @@
 			</thead>
 			<tbody>
 				<tr>
-					<td>
-					<input type="checkbox" id="checkbox1">
+					<td><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox1">
+					<input type="checkbox" id="checkbox1" class="mdl-checkbox__input"></label>
 					</td>
-					<td class="mdl-data-table__cell--non-numeric">Pokemon 1 <select id="dropdown1">
+					<td class="mdl-data-table__cell--non-numeric"><select id="dropdown1">
 					<option id="12">12</option>
 					<option id="25">25</option>
 					<option id="50">50</option>
@@ -61,10 +61,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td>
-					<input type="checkbox" id="checkbox2">
+					<td><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox2">
+					<input type="checkbox" id="checkbox2" class="mdl-checkbox__input"></label>
 					</td>
-					<td class="mdl-data-table__cell--non-numeric">Pokemon 2 <select id="dropdown2">
+					<td class="mdl-data-table__cell--non-numeric"><select id="dropdown2">
 					<option id="12">12</option>
 					<option id="25">25</option>
 					<option id="50">50</option>
@@ -95,10 +95,10 @@
 					</td>
 				</tr>
 				<tr>
-					<td>
-					<input type="checkbox" id="checkbox3">
+					<td><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox3">
+					<input type="checkbox" id="checkbox3" class="mdl-checkbox__input"></label>
 					</td>
-					<td class="mdl-data-table__cell--non-numeric">Pokemon 3 <select id="dropdown3">
+					<td class="mdl-data-table__cell--non-numeric"><select id="dropdown3">
 					<option id="12">12</option>
 					<option id="25">25</option>
 					<option id="50">50</option>
@@ -133,8 +133,7 @@
 	</div>
 	<div class="mdl-card__actions">
 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="compute">Compute</button>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><a href="https://kantelabs.github.io/index.html">See More</a></button>
-		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"></button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="portfolioLink"><a href="https://kantelabs.github.io/index.html">My  Portfolio</a></button>
 	</div>
 </div>
 </body>
