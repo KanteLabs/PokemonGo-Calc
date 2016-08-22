@@ -31,5 +31,10 @@ $(document).ready(function(){
 	$("#compute").click(function(){
 		check()
 	});
+	$(".mdl-textfield__input").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#compute").click();
+		}
+	});
 
 });
