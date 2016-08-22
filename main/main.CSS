@@ -1,0 +1,37 @@
+body {
+	background-color: skyblue;
+}
+body .mdl-card {
+	margin: 3% auto auto auto;
+	max-width: 900px;
+	width: auto;
+	background-color: #FFD700;
+	border: 2px solid;
+}
+body .mdl-card__title-text {
+	margin: auto;
+}
+.mdl-card__title {
+	background-color: #4169E1;
+}
+.mdl-card__media {
+	height: auto;
+	width: auto;
+	margin: auto;
+}
+button a {
+	color: white;
+	text-decoration: none;
+}
+body div .mdl-card__supporting-text {
+	width: auto;
+	margin: auto;
+	background-color:#4169E1;
+}
+form .mdl-textfield {
+	width: auto;
+	height: 8px;
+	margin: auto;
+}
+body .mdl-card__actions button {
+}
