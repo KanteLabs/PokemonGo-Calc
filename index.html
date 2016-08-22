@@ -1,0 +1,141 @@
+<! Doctype HTML5>
+<html>
+<head>
+<link rel='shortcut icon' href="favicon.png" type="image/x-icon" />
+<title>PokeGo Calc</title>
+<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<link rel="stylesheet" href="main/main.CSS" />
+<script src="main/main.JS"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-amber.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="mdl-card mdl-shadow--8dp">
+	<div class="mdl-card__title">
+		<h1 class="mdl-card__title-text">PokemonGo Evolve Calculator</h1>
+	</div>
+	<div class="mdl-card__media"><img src="images/logo.png"></div>
+	<div class="mdl-card__supporting-text">
+		<table class="mdl-data-table mdl-js-data-table mdl-data-table">
+			<thead>
+				<tr><th>Find Value:</th>
+					<th class="mdl-data-table__cell--non-numeric">Candy Required</th>
+					<th>Pokemon Count</th>
+					<th>Candy Count</th>
+					<th>Evolution Count</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+					<input type="checkbox" id="checkbox1">
+					</td>
+					<td class="mdl-data-table__cell--non-numeric">Pokemon 1 <select id="dropdown1">
+					<option id="12">12</option>
+					<option id="25">25</option>
+					<option id="50">50</option>
+					<option id="100">100</option>
+					<option id="400">400</option>
+					</select>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="pokecount1">
+							<label class="mdl-textfield__label" for="pokecount1" id="pokecount1">Amount of Pokemon</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="candycount1">
+							<label class="mdl-textfield__label" for="candycount1" id="candycount1">Amount of Candy</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+						<p id="p1">0</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="checkbox" id="checkbox2">
+					</td>
+					<td class="mdl-data-table__cell--non-numeric">Pokemon 2 <select id="dropdown2">
+					<option id="12">12</option>
+					<option id="25">25</option>
+					<option id="50">50</option>
+					<option id="100">100</option>
+					<option id="400">400</option>
+					</select>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="pokecount2">
+							<label class="mdl-textfield__label" for="pokecount2" id="pokecount2">Amount of Pokemon</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="candycount2">
+							<label class="mdl-textfield__label" for="candycount2" id="candycount2">Amount of Candy</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+						<p id="p2">0</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type="checkbox" id="checkbox3">
+					</td>
+					<td class="mdl-data-table__cell--non-numeric">Pokemon 3 <select id="dropdown3">
+					<option id="12">12</option>
+					<option id="25">25</option>
+					<option id="50">50</option>
+					<option id="100">100</option>
+					<option id="400">400</option>
+					</select>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="pokecount3">
+							<label class="mdl-textfield__label" for="pokecount3" id="pokecount3">Amount of Pokemon</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+					<form action="#">
+						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+							<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="candycount3">
+							<label class="mdl-textfield__label" for="candycount3" id="candycount3">Amount of Candy</label>
+							<span class="mdl-textfield__error">Enter a number!</span>
+						</div>
+					</form>
+					</td>
+					<td>
+						<p id="p3">0</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdl-card__actions">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="compute">Compute</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"><a href="https://kantelabs.github.io/index.html">See More</a></button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"></button>
+	</div>
+</div>
+</body>
+</html>
